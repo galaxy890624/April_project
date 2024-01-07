@@ -10,21 +10,21 @@ public class Menu : MonoBehaviour
     public void 開始()
     {
         Debug.Log("開始");
-        //SceneManager.LoadScene("GamePlay");
+        SceneManager.LoadScene("GamePlay");
     }
 
-    public void 升級()
+    public void 讀取()
     {
-        Debug.Log("升級");
+        Debug.Log("讀取");
         //SceneManager.LoadScene("TechnologyTree");
 
     }
     public void 選項()
     {
-        //Debug.Log("選項");
+        Debug.Log("選項");
     }
     public void 離開()
     {
-        //Debug.Log("離開");
+        Debug.Log("離開");
     }
 }
