@@ -18,7 +18,7 @@ public class ChatboxGenerator : MonoBehaviour
             chatbox = ScriptableObject.CreateInstance<Chatbox>();
         }
 
-        print($"<color=#ff00ff>Info:<color=#00ff00>{chatbox.Info}</color></color>");
+        // print($"<color=#ff00ff>Info:<color=#00ff00>{chatbox.Info}</color></color>");
     }
 
     // Game logic
@@ -32,5 +32,6 @@ public class ChatboxGenerator : MonoBehaviour
     {
         // 使用 chatbox 來實例化對話框，你需要根據 Chatbox 類別的實際內容進行調整
         Instantiate(chatbox);
+        print($"<color=#ff00ff>Info:<color=#00ff00>{chatbox.Info}</color></color>");
     }
 }
