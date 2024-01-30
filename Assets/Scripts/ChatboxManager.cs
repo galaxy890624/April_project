@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using static UnityEditor.Progress;
 
-// 用來控制Chatbox的生成
+// 用來控制Chatbox的儲存
 
 [CreateAssetMenu(fileName = "ChatboxManager", menuName = "Chatbox/ChatboxManager")]
 public class ChatboxManager : ScriptableObject
