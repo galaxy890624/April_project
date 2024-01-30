@@ -2,17 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ChatboxManager : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+// 用來控制Chatbox的生成
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+public class ChatboxManager : ScriptableObject
+{
+    
 }
