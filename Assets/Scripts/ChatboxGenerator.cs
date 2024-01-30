@@ -6,12 +6,19 @@ using UnityEngine;
 
 public class ChatboxGenerator : MonoBehaviour
 {
-    Chatbox Chatbox;
+    public Chatbox chatbox; // 注意：我們將 Chatbox 更改為小寫，以避免與類型名稱混淆
 
     // initialize
     private void OnEnable()
     {
-        print($"<color=#ff00ff>Info:<color=#00ff00>{Chatbox.Info}</color></color>");
+        // 確保 chatbox 已經被實例化
+        if (chatbox == null)
+        {
+            // 實例化 chatbox
+            chatbox = ScriptableObject.CreateInstance<Chatbox>();
+        }
+
+        print($"<color=#ff00ff>Info:<color=#00ff00>{chatbox.Info}</color></color>");
     }
 
     // Game logic
@@ -20,8 +27,10 @@ public class ChatboxGenerator : MonoBehaviour
     {
 
     }
+
     public void 產生對話框()
     {
-        // Instantiate( Chatbox );
+        // 使用 chatbox 來實例化對話框，你需要根據 Chatbox 類別的實際內容進行調整
+        Instantiate(chatbox);
     }
 }
