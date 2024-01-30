@@ -22,6 +22,6 @@ public class ChatboxGenerator : MonoBehaviour
     }
     public void 產生對話框()
     {
-        print($"<color=#ff00ff>Info:<color=#00ff00>{Chatbox.Info}</color></color>");
+        // Instantiate( Chatbox );
     }
 }
