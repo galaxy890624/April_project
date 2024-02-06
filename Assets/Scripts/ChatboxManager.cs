@@ -5,7 +5,7 @@ using static UnityEditor.Progress;
 
 // 用來控制Chatbox的儲存
 
-[CreateAssetMenu(fileName = "ChatboxManager", menuName = "Chatbox/ChatboxManager")]
+[CreateAssetMenu(fileName = "ChatboxManager", menuName = "Chatbox/ChatboxManager")] // 右鍵 > Chatbox > ChatboxManager
 public class ChatboxManager : ScriptableObject
 {
     /// <summary>

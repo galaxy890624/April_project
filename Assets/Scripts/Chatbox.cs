@@ -5,7 +5,7 @@ using UnityEngine;
 // 用來儲存對話框的訊息
 // ex: 聊天對象的人物頭像, 對話框, ...
 
-[CreateAssetMenu(fileName = "New Chatbox", menuName = "Chatbox/New Chatbox")]
+[CreateAssetMenu(fileName = "New Chatbox", menuName = "Chatbox/New Chatbox")] // 右鍵 > Chatbox > New Chatbox
 public class Chatbox : ScriptableObject
 {
     public Sprite HeadImage; // 頭像圖片
