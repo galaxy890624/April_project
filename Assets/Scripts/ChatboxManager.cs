@@ -4,6 +4,7 @@ using UnityEngine;
 using static UnityEditor.Progress;
 
 // 用來控制Chatbox的儲存
+// 參考Inventory.cs
 
 [CreateAssetMenu(fileName = "ChatboxManager", menuName = "Chatbox/ChatboxManager")] // 右鍵 > Chatbox > ChatboxManager
 public class ChatboxManager : ScriptableObject
