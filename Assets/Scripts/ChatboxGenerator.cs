@@ -31,7 +31,7 @@ public class ChatboxGenerator : MonoBehaviour
     public void 產生對話框()
     {
         // 使用 chatbox 來實例化對話框，你需要根據 Chatbox 類別的實際內容進行調整
-        Instantiate(chatbox);
+        Instantiate(chatbox, Vector3.zero, Quaternion.identity); // **要指定parent object
         print($"<color=#ff00ff>Info:<color=#00ff00>{chatbox.Info}</color></color>");
     }
 }
