@@ -15,7 +15,8 @@ public class ChatboxGenerator : MonoBehaviour
     public ChatboxManager ChatboxManager;
     public Text ItemInfo;
 
-    // public List<GameObject> Slots = new List<GameObject>();
+    public List<GameObject> Slots = new List<GameObject>();
+
     void Awake()
     {
         if (instance != null)
@@ -39,6 +40,7 @@ public class ChatboxGenerator : MonoBehaviour
 
     public void 產生對話框()
     {
+        Instantiate(Chatbox, Vector3.zero, Quaternion.identity);
         print($"<color=#ff00ff>Info:<color=#00ff00>{Chatbox.Info}</color></color>");
     }
 }
