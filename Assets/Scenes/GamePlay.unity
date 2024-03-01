@@ -328,14 +328,15 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1349169995}
   m_Father: {fileID: 1562848082}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000055293633}
-  m_SizeDelta: {x: 0, y: 300}
+  m_AnchoredPosition: {x: -0.000038146973, y: 0.000040999188}
+  m_SizeDelta: {x: 0, y: 648}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &470865626
 GameObject:
@@ -891,7 +892,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5631cd8312668ac48a7d72745e3547db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chatbox: {fileID: 11400000, guid: 7bd69b0ec58e0ce469fadf31b828eae2, type: 2}
+  Chatbox: {fileID: 11400000, guid: 7bd69b0ec58e0ce469fadf31b828eae2, type: 2}
+  ChatboxManager: {fileID: 0}
+  ItemInfo: {fileID: 0}
 --- !u!1 &1089693176
 GameObject:
   m_ObjectHideFlags: 0
@@ -1027,7 +1030,6 @@ RectTransform:
   m_Children:
   - {fileID: 585895904}
   - {fileID: 754575080}
-  - {fileID: 1349169995}
   m_Father: {fileID: 1089693180}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1105,12 +1107,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1163244278}
+  m_Father: {fileID: 405210494}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -520}
+  m_AnchoredPosition: {x: 8.5, y: -300}
   m_SizeDelta: {x: 400, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1349169996
