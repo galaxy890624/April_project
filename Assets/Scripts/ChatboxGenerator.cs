@@ -16,7 +16,7 @@ public class ChatboxGenerator : MonoBehaviour
     public Text ItemInfo;
     public GameObject ChatboxModule;
 
-    public List<GameObject> Slots = new List<GameObject>();
+    //public List<GameObject> Slots = new List<GameObject>();
 
     void Awake()
     {
