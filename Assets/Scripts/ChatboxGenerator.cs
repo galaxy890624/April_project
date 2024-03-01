@@ -14,6 +14,7 @@ public class ChatboxGenerator : MonoBehaviour
     static ChatboxGenerator instance;
     public ChatboxManager ChatboxManager;
     public Text ItemInfo;
+    public GameObject ChatboxModule;
 
     public List<GameObject> Slots = new List<GameObject>();
 
@@ -40,7 +41,7 @@ public class ChatboxGenerator : MonoBehaviour
 
     public void 產生對話框()
     {
-        Instantiate(Chatbox); // ArgumentException: Cannot instantiate a ScriptableObject with a position and rotation
+        Instantiate(ChatboxModule); // ArgumentException: Cannot instantiate a ScriptableObject with a position and rotation
         print($"<color=#ff00ff>Info:<color=#00ff00>{Chatbox.Info}</color></color>");
     }
 }
