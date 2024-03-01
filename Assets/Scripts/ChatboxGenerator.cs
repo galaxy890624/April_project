@@ -40,7 +40,7 @@ public class ChatboxGenerator : MonoBehaviour
 
     public void 產生對話框()
     {
-        Instantiate(Chatbox, Vector3.zero, Quaternion.identity);
+        Instantiate(Chatbox); // ArgumentException: Cannot instantiate a ScriptableObject with a position and rotation
         print($"<color=#ff00ff>Info:<color=#00ff00>{Chatbox.Info}</color></color>");
     }
 }
