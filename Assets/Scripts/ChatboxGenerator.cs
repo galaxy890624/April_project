@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class ChatboxGenerator : MonoBehaviour
 {
     public Chatbox Chatbox;
+    public Transform Content;
 
     #region singleton
     // 可以在其他代碼進行訪問
@@ -41,7 +42,7 @@ public class ChatboxGenerator : MonoBehaviour
 
     public void 產生對話框()
     {
-        Instantiate(ChatboxModule); // ArgumentException: Cannot instantiate a ScriptableObject with a position and rotation
+        Instantiate(ChatboxModule, Vector3.zero, Quaternion.identity, Content); // ArgumentException: Cannot instantiate a ScriptableObject with a position and rotation
         print($"<color=#ff00ff>Info:<color=#00ff00>{Chatbox.Info}</color></color>");
     }
 }
