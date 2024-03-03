@@ -20,3 +20,6 @@ ChatboxManager.cs
 
 ChatboxGenerator.cs
 // 用來控制Chatbox的生成
+
+**********20240303100300**********
+新建一個Scroll View(生成是正常的)
