@@ -15,7 +15,8 @@ public class ChatboxGenerator : MonoBehaviour
     static ChatboxGenerator instance;
     public ChatboxManager ChatboxManager;
     public Text ItemInfo;
-    public GameObject ChatboxModule;
+    public GameObject ChatboxModule_0; // 對方的對話框模組
+    public GameObject ChatboxModule_1; // 自己的對話框模組
 
     //public List<GameObject> Slots = new List<GameObject>();
 
@@ -40,13 +41,16 @@ public class ChatboxGenerator : MonoBehaviour
         }
     }
 
-    public void 產生對話框()
+    public void 產生對話框0()
     {
-        /*
-         *  // ArgumentException: Cannot instantiate a ScriptableObject with a position and rotation
-         *  // + new Vector3(960f, 613.5f, 0f)
-         */
-        Instantiate(ChatboxModule, Vector3.zero, Quaternion.identity, Parent);
+        // 記得在Content加上Vertical Layout Group元件, 把子物件座標鎖定住
+        Instantiate(ChatboxModule_0, Vector3.zero, Quaternion.identity, Parent);
+        print($"<color=#ff00ff>Info:<color=#00ff00>{Chatbox.Info}</color></color>");
+    }
+    public void 產生對話框1()
+    {
+        // 記得在Content加上Vertical Layout Group元件, 把子物件座標鎖定住
+        Instantiate(ChatboxModule_1, Vector3.zero, Quaternion.identity, Parent);
         print($"<color=#ff00ff>Info:<color=#00ff00>{Chatbox.Info}</color></color>");
     }
 }
